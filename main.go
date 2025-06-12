@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 // func setAddress(x *int) {
 
 // 	*x = 25
@@ -66,18 +62,219 @@ import (
 
 // }
 
+// func hellpHttp(w http.ResponseWriter, r *http.Request) {
+
+// 	fmt.Fprintln(w, "Hello")
+
+// }
+
+func Spl(str string) (dir, path string) {
+
+	return "ABC", "DFG"
+
+}
+
 func main() {
 
-	ch := make(chan bool, 1)
+	// ----------------- for range (start)
+	// var (
+	// 	i int
+	// 	v int
+	// )
 
-	ch <- true
+	// l_x := []int{0, 1, 2, 3, 4, 5}
 
-	select {
-	case <-ch:
-		fmt.Println("OK")
-		// default:
-		// 	fmt.Println("END")
-	}
+	// for i, v = range l_x {
+
+	// 	fmt.Printf("#%d: %d\n", i+1, v)
+
+	// }
+
+	// fmt.Println(i, v)
+	// ----------------- for range (end)
+	// ----------------- min project (start)
+	// l_x := []int{0, 1, 2, 3, 4, 5}
+
+	// l_y := []int{0, 1, 2, 3, 4, 5}
+
+	// for i := 0; i < len(l_x); i++ {
+
+	// 	for j := 0; j < len(l_y); j++ {
+
+	// 		fmt.Printf("%d * %d = %d\n", l_x[i], l_y[j], l_x[i]*l_y[j])
+
+	// 	}
+
+	// }
+	// ----------------- min project (end)
+	// ----------------- basic for (statrt)
+	// for i := 1; i <= 50; i++ {
+
+	// 	time.Sleep(time.Second / 2)
+	// 	fmt.Println(i)
+	// 	time.Sleep(time.Second / 2)
+
+	// }
+	// ----------------- basic for (end)
+	// -------------------- project time day (start)
+	// switch hour := time.Now().Hour(); true {
+
+	// case hour >= 6 && hour < 12:
+	// 	fmt.Println("Sobhe")
+
+	// case hour >= 12 && hour < 18:
+	// 	fmt.Println("Asre")
+
+	// case hour >= 18 && hour <= 24:
+	// 	fmt.Println("Shab")
+
+	// case hour < 6 && hour > 0:
+	// 	fmt.Println("Bamdad")
+	// default:
+	// 	fmt.Println("Error")
+	// }
+	// -------------------- project time day (end)
+	// -------------------- swith case (start)
+	// name := "ahmad"
+	// switch name {
+	// case "sina", "sin":
+	// 	fmt.Println("Hi sina")
+	// case "ahmad":
+	// 	fmt.Println("Hi ahmad")
+	// }
+	// -------------------- swith case (end)
+	// -------------------- Value in if (start)
+	// if _, err := strconv.Atoi("85"); err != nil {
+
+	// 	fmt.Println("Error")
+
+	// 	return
+
+	// }
+	// -------------------- Value in if (end)
+	// --------------- project (statrt)
+	// if len(os.Args) != 2 {
+
+	// 	fmt.Println("Type a Vlaue")
+
+	// 	return
+
+	// }
+
+	// num, err := strconv.Atoi(os.Args[1])
+
+	// if err != nil {
+
+	// 	fmt.Println("Error: ", err)
+
+	// 	return
+
+	// }
+
+	// fote := float64(num) * 0.3048
+
+	// fmt.Println("Number(Meter)=> ", num, "m | Number(Fote)", fote, "f")
+	// --------------- project (end)
+	// --------------- strconv (statrt)
+
+	// n, err := strconv.Atoi(os.Args[1])
+
+	// fmt.Println("Error: ", err, " Data: ", n)
+
+	// --------------- strconv (end)
+
+	// --------------- project (statrt)
+	// if len(os.Args) != 3 {
+
+	// 	panic("type a username and password => format 'go run . [username] [password]'")
+
+	// } else {
+
+	// 	username, password := strings.ToLower(os.Args[1]), strings.ToLower(os.Args[2])
+
+	// 	def_username, def_password := "jack", "1888"
+
+	// 	if username != def_username || password != def_password {
+
+	// 		panic("Invalide username or password")
+
+	// 	} else {
+
+	// 		fmt.Println("Done Login username: ", username)
+
+	// 	}
+	// }
+	// --------------- project (end)
+
+	// ------------------ IOTA && get args in trminal for first (start)
+	// const (
+	// 	a = iota + 1
+	// 	b
+	// 	c
+	// )
+
+	// fmt.Println(a, b, c)
+
+	// val := strings.ToUpper(os.Args[1])
+
+	// cap := strings.Repeat("!", utf8.RuneCountInString(val))
+
+	// fmt.Printf("%s%s%s\n", cap, val, cap)
+
+	// ------------------ IOTA && get args in trminal for first (end)
+
+	// ------------ Get APIs (start)
+	// url := "https://digiaparteman.ir/api/test/up"
+
+	// resp, err := http.Get(url)
+	// if err != nil {
+	// 	log.Fatalf("خطا در ارسال درخواست: %v", err)
+	// }
+	// defer resp.Body.Close()
+
+	// body, err := ioutil.ReadAll(resp.Body)
+	// if err != nil {
+	// 	log.Fatalf("خطا در خواندن پاسخ: %v", err)
+	// }
+
+	// fmt.Println("پاسخ دریافت‌شده:")
+	// fmt.Println(string(body))
+	// ------------ Get APIs (end)
+
+	// ------------ Make webserver (strat)
+	// http.HandleFunc("/root", hellpHttp)
+
+	// fmt.Println("Run Server 8010...")
+
+	// http.ListenAndServe(":8010", nil)
+	// ------------ Make webserver (end)
+
+	// ------------ Get input in user (start)
+	// var x string
+
+	// y := []string{"S", "i", "n", "a"}
+
+	// fmt.Print("Type a number: ")
+	// fmt.Scanln(&x)
+
+	// fmt.Printf("Number select: %s\n", x)
+
+	// m := strings.Join(y, "")
+
+	// fmt.Println(m)
+	// ------------ Get input in user (end)
+
+	// ------------ channel whit select (start)
+	// ch := make(chan bool, 1)
+
+	// ch <- true
+
+	// select {
+	// case <-ch:
+	// 	fmt.Println("OK")
+	// 	default:
+	// 	fmt.Println("END")
+	// }
 
 	// go func() {
 	// 	val := 45
@@ -86,6 +283,7 @@ func main() {
 	// }()
 
 	// fmt.Println(<-ch)
+	// ------------ channel whit select (end)
 
 	// u := User{name: "sina", family: "nz", age: 45}
 
