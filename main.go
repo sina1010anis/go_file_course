@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 // func setAddress(x *int) {
 
 // 	*x = 25
@@ -68,13 +72,375 @@ package main
 
 // }
 
-func Spl(str string) (dir, path string) {
+// func Spl(str string) (dir, path string) {
 
-	return "ABC", "DFG"
+// 	return "ABC", "DFG"
 
-}
+// }
+
+// type ver struct {
+// 	X, Y int
+// }
+
+// func createPassword(len_password int) string {
+
+// 	alf := "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMM1234567890!@#$%^&*()_-=+"
+
+// 	var res string
+
+// 	for i := 0; i < len_password; i++ {
+
+// 		rand_number := rand.Intn(73)
+
+// 		res += string(alf[rand_number])
+
+// 	}
+
+// 	return res
+
+// }
 
 func main() {
+
+	sli := []int{1, 2, 3}
+
+	fmt.Println(cap(sli))
+
+	// --------------------- project (start)
+	// var passwords []string
+
+	// for i := 0; i < 25; i++ {
+
+	// 	passwords = append(passwords, createPassword(8))
+	// }
+
+	// fmt.Println(passwords)
+	// --------------------- project (end)
+	// ----------------------- project time (start)
+	// number := [...][5]string{
+	// 	{
+	// 		"000",
+	// 		"0 0",
+	// 		"0 0",
+	// 		"0 0",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"00 ",
+	// 		" 0 ",
+	// 		" 0 ",
+	// 		" 0 ",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"  0",
+	// 		"000",
+	// 		"0  ",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"  0",
+	// 		"000",
+	// 		"  0",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"0 0",
+	// 		"0 0",
+	// 		"000",
+	// 		"  0",
+	// 		"  0",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"0  ",
+	// 		"000",
+	// 		"  0",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"0  ",
+	// 		"000",
+	// 		"0 0",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"  0",
+	// 		"  0",
+	// 		"  0",
+	// 		"  0",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"0 0",
+	// 		"000",
+	// 		"0 0",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"000",
+	// 		"0 0",
+	// 		"000",
+	// 		"  0",
+	// 		"000",
+	// 	},
+	// 	{
+	// 		"   ",
+	// 		" 0 ",
+	// 		"   ",
+	// 		" 0 ",
+	// 		"   ",
+	// 	},
+	// }
+
+	// hour := time.Now().Hour() / 10
+
+	// hour_s := time.Now().Hour() % 10
+
+	// second := time.Now().Second() / 10
+
+	// second_s := time.Now().Second() % 10
+
+	// minute := time.Now().Minute() / 10
+
+	// minute_s := time.Now().Minute() % 10
+
+	// for i := 0; i <= 0; i++ {
+
+	// 	for j := 0; j <= 4; j++ {
+
+	// 		fmt.Println(number[hour+1][j], " ", number[hour_s+1][j], " ", number[11][j], " ", number[minute+1][j], " ", number[minute_s+1][j], " ", number[11][j], " ", number[second+1][j], " ", number[second_s+1][j])
+
+	// 	}
+
+	// }
+
+	// for _, v := range number {
+
+	// 	for _, v2 := range v {
+
+	// 		fmt.Printf("%s\n", v2)
+
+	// 	}
+
+	// }
+	// ----------------------- project time (end)
+	// ----------------- my type or new type (start)
+	// type book [3]int
+	// arr := book{1, 2, 3}
+
+	// arr2 := [3]int{1, 2, 3}
+
+	// fmt.Printf("%T\n", arr2)
+	// ----------------- my type or new type (end)
+	// ------------- keyed Element array(start)
+	// arr := [...]int{
+	// 	2: 45,
+	// 	78,
+	// 	5: 44,
+	// }
+
+	// fmt.Println(arr)
+	// ------------- keyed Element array(end)
+	// ---------------- arraymap (start)
+	// arr1 := map[string]int{"item_1": 25, "item_2": 46}
+
+	// fmt.Println(arr1)
+	// ---------------- arraymap (end)
+	// ---------------- mini project (start)
+	// x := [5]int{1, 2, 3, 4, 5}
+
+	// input := os.Args[1]
+
+	// fmt.Printf("%s, => %d\n", input, x[rand.Intn(5)])
+	// ---------------- mini project (end)
+	// ------------------ path (start)
+	// dir, file := path.Split("src/css/style.css")
+
+	// fmt.Printf("Dir=> %v, File=> %v\n", dir, file)
+	// ------------------ path (end)
+	// p1 := ver{X: 1, Y: 80}
+
+	// fmt.Println(p1)
+
+	// var arr map[int]string
+
+	// fmt.Println(arr)
+
+	// --------------------- project (start)
+	// text := os.Args[1]
+
+	// var new_text string
+
+	// for i := len(text) - 1; i >= 0; i-- {
+
+	// 	new_text += string(text[i])
+
+	// }
+
+	// if text == new_text {
+
+	// 	fmt.Println("Match... you string=> ", text, " reverce string=> ", new_text)
+
+	// 	return
+
+	// }
+
+	// fmt.Println("Not match... you string=> ", text, " reverce string=> ", new_text)
+	// --------------------- project (end)
+	// ---------------- range for(start)
+	// str := "" + "Lorem ipsum dolor sit amet, consectetur amet adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+	// chunk_str := strings.Fields(str)
+
+	// query := os.Args[1:]
+
+	// for _, i := range query {
+
+	// 	for _, j := range chunk_str {
+
+	// 		if i == j {
+
+	// 			fmt.Println("Search ok", i)
+
+	// 		}
+
+	// 	}
+
+	// }
+	// ---------------- range for(end)
+	// --------------- Adad Aval and morakab (start)
+	// var d float64
+
+	// if len(os.Args) != 2 {
+
+	// 	fmt.Println("Error Type only one number")
+
+	// 	return
+
+	// }
+
+	// n, err := strconv.Atoi(os.Args[1])
+
+	// if err != nil {
+
+	// 	fmt.Println("Error a Number")
+
+	// 	return
+
+	// }
+
+	// if n < 0 {
+
+	// 	fmt.Println("Error number +")
+
+	// 	return
+
+	// }
+
+	// // fmt.Println(math.Mod(5.1, 1.0))
+
+	// for i := 2; i < n; i++ {
+
+	// 	d = float64(n) / float64(i)
+
+	// 	if math.Mod(d, 1.0) == 0 {
+
+	// 		fmt.Println("Morakab")
+
+	// 		return
+
+	// 	}
+
+	// }
+
+	// fmt.Println("Aval")
+	// --------------- Adad Aval and morakab (end)
+	// ------------ Test rand (start)
+	// for i := 0; i < 10; i++ {
+
+	// 	n := rand.Intn(10)
+
+	// 	fmt.Printf("%d ", n)
+	// }
+	// ------------ Test rand (end)
+	// ------------- Proejct section (start)
+	// you_num := rand.IntN(11)
+
+	// var my_num int
+
+	// var count int
+
+	// for {
+
+	// 	if count == 5 {
+
+	// 		fmt.Printf("Game Over (%d)\n", you_num)
+
+	// 		break
+
+	// 	}
+
+	// 	fmt.Printf("Type new Number = ")
+
+	// 	(fmt.Scan(&my_num))
+
+	// 	if my_num == you_num {
+
+	// 		if count == 0 {
+
+	// 			fmt.Printf("WoW run a first number winer =>(%d)\n", my_num)
+
+	// 		} else {
+
+	// 			fmt.Printf("Done number is =>(%d)\n", my_num)
+
+	// 		}
+
+	// 		break
+
+	// 	}
+
+	// 	fmt.Printf("not a number (%d)\n", my_num)
+
+	// 	count++
+
+	// }
+	// ------------- Proejct section (end)
+	// ------------------ Fibonacci number (start)
+	// f := []int{0, 1, 1}
+
+	// n, _ := strconv.Atoi(os.Args[1])
+
+	// if n <= 3 {
+
+	// 	fmt.Println(f[:n])
+
+	// 	return
+
+	// }
+
+	// for i := 3; i < n; i++ {
+
+	// 	o_p_n := int(f[i-1])
+
+	// 	t_p_n := int(f[i-2])
+
+	// 	f = append(f, o_p_n+t_p_n)
+
+	// }
+
+	// fmt.Println(f)
+	// ------------------ Fibonacci number (end)
+	// for _, v := range str_val {
+
+	// 	fmt.Printf("%s", v)
+
+	// }
 
 	// ----------------- for range (start)
 	// var (
