@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 // func setAddress(x *int) {
 
 // 	*x = 25
@@ -100,12 +96,195 @@ import (
 
 // }
 
+// func maskSubstring(s string, start, end int) string {
+// 	if start < 0 || end > len(s) || start >= end {
+// 		return s // invalid range, return original
+// 	}
+
+// 	masked := strings.Repeat("*", end-start)
+// 	return s[:start] + masked + s[end:]
+// }
+
 func main() {
 
-	sli := []int{1, 2, 3}
+	// ----------------------- get inpute as trminal for bufio.NewScanner => in.Scan (start)
+	// in := bufio.NewScanner(os.Stdin)
 
-	fmt.Println(cap(sli))
+	// fmt.Println("Type your name: ")
 
+	// in.Split(bufio.ScanWords)
+
+	// for in.Scan() {
+
+	// 	fmt.Println(in.Text())
+
+	// }
+
+	// if in.Err() != nil {
+
+	// 	fmt.Println("-----------------------")
+
+	// 	fmt.Println("Has a error")
+
+	// 	return
+
+	// }
+
+	// fmt.Println("-----------------------")
+
+	// fmt.Println("Hello: ", in.Text())
+	// ----------------------- get inpute as trminal for bufio.NewScanner => in.Scan (end)
+	// ------------ map section 2 (start)
+	// var kv map[string]string
+
+	// kv = make(map[string]string, 0)
+
+	// fmt.Println(kv)
+	// ------------ map section 2 (end)
+
+	// -------------------- proejct maske (start)+
+
+	// str := "//:www.test.irhi ////:www.test.ir sina //:www.test.ir"
+
+	// match := "//"
+
+	// keys := []int{}
+
+	// var s int
+
+	// str = str + " "
+
+	// if len(str) < len(match) {
+
+	// 	fmt.Println("Errro: 800 (len error)")
+
+	// 	return
+
+	// }
+
+	// for i := 0; i <= len(str)-len(match); i++ {
+
+	// 	search := str[i : len(match)+i]
+
+	// 	if search == match {
+
+	// 		m := i
+
+	// 		for j := m; j < len(str); j++ {
+
+	// 			if str[j] == 32 {
+
+	// 				keys = append(keys, m, j)
+
+	// 				break
+
+	// 			}
+
+	// 		}
+
+	// 	}
+
+	// }
+
+	// for s < len(keys) {
+
+	// 	str = maskSubstring(str, keys[s], keys[s+1])
+
+	// 	s += 2
+
+	// }
+
+	// fmt.Println(str)
+
+	// -------------------- proejct maske (end)
+
+	// str := "Hello Wolrd...!"
+
+	// std := []byte(str)
+
+	// fmt.Println(std)
+
+	// start, stop := 'A', 'Z'
+
+	// fmt.Println(start, stop)
+
+	// ---------------- use file for ioutil (start)
+	// byte_data := make([]byte, 50)
+
+	// err := ioutil.WriteFile("new.txt", byte_data, 0654)
+
+	// if err != nil {
+
+	// 	fmt.Println(err)
+
+	// }
+
+	// file, err_2 := ioutil.ReadFile("new.txt")
+
+	// if err_2 != nil {
+
+	// 	fmt.Printf("%s\n", file)
+
+	// }
+
+	// fmt.Println(file)
+	// ---------------- use file for ioutil (end)
+	// -------------------- ioutil package (start)
+	// file, err := ioutil.TempFile("test", "mms")
+
+	// if err != nil {
+
+	// 	fmt.Println(err)
+
+	// 	return
+
+	// }
+
+	// fmt.Println(file)
+
+	// for _, v := range file {
+
+	// 	fmt.Println(v)
+
+	// }
+	// -------------------- ioutil package (end)
+	//-------------------- append tip (start)
+	// x := make([]int, 2, 8)
+
+	// y := []int{4, 5, 6, 7, 8, 9}
+
+	// z := append([]int{}, y...)
+
+	// fmt.Println(z)
+	//-------------------- append tip (end)
+	// ----------------- cap in slice (start)
+	// x := []int{1, 2, 3, 4, 5}
+
+	// y := x[0:3:5]
+
+	// fmt.Println(cap(y))
+	// ----------------- cap in slice (end)
+	// ----------------- cap slice for append(start)
+	// var num []int
+
+	// num = []int{1, 2}
+	// fmt.Println(num)
+
+	// num = append(num, 3, 4)
+	// fmt.Println(num)
+
+	// num = append(num, 3, 4)
+	// fmt.Println(num)
+
+	// num = append(num[2:4], 5, 7)
+	// fmt.Println(num)
+
+	// fmt.Println(num[:cap(num)])
+	// ----------------- cap slice for append(end)
+	// -------------- cap function (start)
+	// sli := []int{1, 2, 3}
+	// fmt.Println(cap(sli))
+	// -------------- cap function (end)
 	// --------------------- project (start)
 	// var passwords []string
 
