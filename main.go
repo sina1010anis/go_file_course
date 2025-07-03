@@ -105,8 +105,138 @@ package main
 // 	return s[:start] + masked + s[end:]
 // }
 
+// type User struct {
+// 	name   string
+// 	family string
+// 	age    int
+// }
+
 func main() {
 
+	// ---------------------- bubble sort (start)
+
+	// vars := os.Args[1:] // smapel input = 5 4 3 2 1 => outeput(typesort"true") 1 2 3 4 5 => output(type"false") 5 4 3 2 1
+
+	// var (
+	// 	m int
+
+	// 	tvars []int
+
+	// 	tnumber int
+	// )
+
+	// ssort := false
+
+	// typesort := false
+
+	// if len(vars) <= 0 {
+
+	// 	fmt.Println("⚠️ Type a numbers...!")
+
+	// 	return
+
+	// }
+
+	// for _, v := range vars {
+
+	// 	val, err := strconv.Atoi(v)
+
+	// 	if err != nil {
+
+	// 		fmt.Printf("⚠️ Opss Error a get number (%s)\n", err)
+
+	// 		return
+
+	// 	}
+
+	// 	if val < 0 {
+
+	// 		fmt.Printf("⚠️ a Number Error (%d) tyoe a number positive\n", val)
+
+	// 		return
+
+	// 	}
+
+	// 	tvars = append(tvars, val)
+
+	// }
+
+	// for {
+
+	// 	ssort = false
+
+	// 	for i := 0; i < len(tvars); i++ {
+
+	// 		if i+1 >= len(tvars) {
+
+	// 			m = i
+
+	// 		} else {
+
+	// 			m = i + 1
+
+	// 		}
+
+	// 		if typesort {
+
+	// 			if tvars[i] > tvars[m] {
+
+	// 				tnumber = tvars[i]
+
+	// 				tvars[i] = tvars[m]
+
+	// 				tvars[m] = tnumber
+
+	// 				ssort = true
+
+	// 			}
+
+	// 		} else {
+
+	// 			if tvars[i] < tvars[m] {
+
+	// 				tnumber = tvars[i]
+
+	// 				tvars[i] = tvars[m]
+
+	// 				tvars[m] = tnumber
+
+	// 				ssort = true
+
+	// 			}
+	// 		}
+
+	// 	}
+
+	// 	if !ssort {
+
+	// 		fmt.Println(tvars)
+
+	// 		return
+
+	// 	}
+	// }
+	// ---------------------- bubble sort (end)
+	// ---------------------- struct local var in main (start)
+	// type Admin struct {
+	// 	name, lastname string
+	// 	age            int
+	// }
+
+	// var user_admin Admin
+
+	// user_admin.name = "root"
+
+	// user_admin.lastname = "local"
+
+	// user_admin.age = 45
+
+	// fmt.Println(user_admin)
+
+	// user_1 := User{"sina", "nz", 26}
+
+	// fmt.Println(user_1)
+	// ---------------------- struct local var in main (end)
 	// ----------------------- get inpute as trminal for bufio.NewScanner => in.Scan (start)
 	// in := bufio.NewScanner(os.Stdin)
 
